@@ -1,0 +1,202 @@
+<!doctype html>
+<html ⚡>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Font example</title>
+
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+        <link rel="canonical" href="notification.html">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                animation: -amp-start 8s steps(1, end) 0s 1 normal both
+            }
+
+            @-webkit-keyframes -amp-start {
+                from {
+                    visibility: hidden
+                }
+
+                to {
+                    visibility: visible
+                }
+            }
+
+            @-moz-keyframes -amp-start {
+                from {
+                    visibility: hidden
+                }
+
+                to {
+                    visibility: visible
+                }
+            }
+
+            @-ms-keyframes -amp-start {
+                from {
+                    visibility: hidden
+                }
+
+                to {
+                    visibility: visible
+                }
+            }
+
+            @-o-keyframes -amp-start {
+                from {
+                    visibility: hidden
+                }
+
+                to {
+                    visibility: visible
+                }
+            }
+
+            @keyframes -amp-start {
+                from {
+                    visibility: hidden
+                }
+
+                to {
+                    visibility: visible
+                }
+            }
+        </style><noscript>
+            <style amp-boilerplate>
+                body {
+                    -webkit-animation: none;
+                    -moz-animation: none;
+                    -ms-animation: none;
+                    animation: none
+                }
+            </style>
+        </noscript>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+        <style amp-custom>
+            .lightbox {
+                background: rgba(0, 0, 0, 0.8);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                text-align: center;
+            }
+
+            .lightbox h1 {
+                color: white;
+            }
+
+            button.lightClick {
+                background: orange;
+                border: 1px solid orange;
+                min-height: 40px;
+                line-height: 40px;
+                color: #fff;
+                font-size: 20px;
+                transform: rotate(90deg);
+                position: fixed;
+                left: 0;
+                margin-left: -48px;
+                margin-top: 350px;
+                text-transform: uppercase;
+                cursor: pointer;
+                z-index: 9999;
+            }
+
+            form.amp-form-submit-success [submit-success],
+            form.amp-form-submit-error [submit-error] {
+                margin-top: 16px;
+            }
+
+            form.amp-form-submit-success [submit-success] {
+                color: green;
+            }
+
+            form.amp-form-submit-error [submit-error] {
+                color: red;
+            }
+
+            form.amp-form-submit-success.hide-inputs>input {
+                display: none
+            }
+
+            .cansle {
+                font-size: 26px;
+                position: relative;
+                right: -22px;
+                /* z-index: 99999; */
+                font-family: sans-serif;
+                margin: -25px auto;
+                /* opacity: 0.9; */
+                text-align: right;
+                cursor: pointer;
+                color: orange;
+            }
+
+            .setUpForm {
+                /* margin-top: 96px; */
+                max-width: 450px;
+                margin: 150px auto;
+                min-height: 350px;
+                padding: 30px;
+                background-color: #fff;
+                border: 1px solid orange;
+                /* color: black; */
+                margin: middle;
+            }
+
+            .setUpForm h2 {
+                color: orange;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 28px;
+            }
+
+            .setUpForm form input {
+                display: block;
+                width: 100%;
+                height: 35px;
+                margin-bottom: 32px;
+                padding: 2px 0px 2px 2px;
+            }
+
+            input.button.button-primary {
+                /* text-align: center; */
+                /* margin: 5px; */
+                width: 140px;
+                color: #fff;
+                background: orange;
+                border: 1px solid orange;
+                font-size: 16px;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="lightClick" on="tap:my-lightbox" role="button" tabindex="0">
+            Subscribe
+        </button>
+
+        <amp-lightbox id="my-lightbox" layout="nodisplay">
+            <div class="lightbox">
+                <div class="setUpForm">
+                    <div class="cansle" on="tap:my-lightbox.close" role="button" tabindex="0">X</div>
+                    <h2>Subscribe and get 20% off on your first order</h2>
+                    <form method="post" action="" target="_top">
+                        <input type="text" name="name" placeholder="Name..." required>
+                        <input type="email" name="email" placeholder="Email..." required>
+                        <input type="submit" value="Subscribe" class="button button-primary">
+                    </form>
+                </div>
+            </div>
+        </amp-lightbox>
+    </body>
+
+</html>
