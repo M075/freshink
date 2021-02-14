@@ -19,17 +19,18 @@ limitations under the License.
 <html ⚡="">
   <head>
     <meta charset="utf-8" />
-    <title>Canvas-Fresh Ink Designs</title>
+    <title>About Fresh Ink Designs</title>
     <link
       rel="canonical"
       href="https://www.ampstart.com/templates/gallery-inner.amp"
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
-
+    <script async custom-element="amp-facebook-page" src="https://cdn.ampproject.org/v0/amp-facebook-page-0.1.js"></script>
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-    <script async custom-element="amp-facebook-like" src="https://cdn.ampproject.org/v0/amp-facebook-like-0.1.js"></script>
+    <!-- <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> -->
+    <!-- <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script> -->
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
     <style amp-boilerplate="">
       body {
@@ -78,68 +79,6 @@ limitations under the License.
           visibility: visible;
         }
       }
-    </style>
-
-    <style> @import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
-
-.modal {
-  /* This way it could be display flex or grid or whatever also. */
-  display: block;
-  
-  /* Probably need media queries here */
-  width: 600px;
-  max-width: 100%;
-  
-  height: 400px;
-  max-height: 100%;
-  
-  position: fixed;
-  
-  z-index: 100;
-  
-  left: 50%;
-  top: 50%;
-  
-  /* Use this for centering if unknown width/height */
-  transform: translate(-50%, -50%);
-  
-  /* If known, negative margins are probably better (less chance of blurry text). */
-  /* margin: -200px 0 0 -200px; */
-  
-  background: white;
-  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
-}
-.closed {
-  display: none;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  
-  background: rgba(0, 0, 0, 0.6);
-}
-.modal-guts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 20px 50px 20px 20px;
-}
-
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
     </style>
     <noscript
       ><style amp-boilerplate="">
@@ -1741,7 +1680,6 @@ limitations under the License.
       .gallery-component-hero {
         margin-bottom: 3.75rem;
       }
-      
       .gallery-component-hero-carousel,
       .gallery-component-hero-content {
         margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem);
@@ -1841,7 +1779,7 @@ limitations under the License.
         .amp-scrollable-carousel-slide:nth-child(5) {
         background: #e6e8e7;
       }
-      .gallery-component-hero-carousel-
+      .gallery-component-hero-carousel
         .amp-scrollable-carousel-slide:nth-child(6) {
         background: #f6baca;
       }
@@ -2210,159 +2148,159 @@ limitations under the License.
       </div>
     </header>
 
-  <!-- Start Sidebar -->
-  <amp-sidebar id="sidebar" class="ampstart-sidebar px3 gallery-sidebar" layout="nodisplay">
-    <div class="flex justify-start items-center ampstart-sidebar-header">
-      <div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0"
-        class="ampstart-navbar-trigger items-start">
-        ✕
-      </div>
+<!-- Start Sidebar -->
+<amp-sidebar id="sidebar" class="ampstart-sidebar px3 gallery-sidebar" layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0"
+      class="ampstart-navbar-trigger items-start">
+      ✕
     </div>
-    <nav class="ampstart-sidebar-nav ampstart-nav">
-      <ul class="list-reset m0 p0 ampstart-label">
-        <li role="heading" class="ampstart-sidebar-nav-title">
-          <h4>Current Works</h4>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./index.amp.html">
-            <div class="gallery-sidebar-nav-item-text">Home</div>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-          <a class="ampstart-nav-link" href="./contact.amp.html">
-            <div class="gallery-sidebar-nav-item-text">Contact</div>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-          <a class="ampstart-nav-link" href="./about.amp.html">
-            <div class="gallery-sidebar-nav-item-text">About</div>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./frames-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Canvases & Boards<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/08.png" srcset="./img/site/08.png, ./img/site/08.png"></amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./logos-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Logos & Letterheads<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="../img/site/logo8.jpg" srcset="./img/site/logo8.jpg, ./img/site/logo8.jpg">
-            </amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./brochures-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Brochures & Menus<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/022.png" srcset="./img/site/022.png ./img/site/022.png"></amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./ads-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Socials & Ads<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/soc2.png" srcset="./img/site/soc2.png, ./img/site/soc2.png"></amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-  
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./invites-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Biz Cards & Invites<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/biz2.jpg" srcset="./img/site/biz2.jpg 1x, ./img/site/biz2.jpg 2x">
-            </amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./banners-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Banners & Flyers<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/bann.jpg" srcset="./img/site/bann.jpg 1x, ./img/site/bann.jpg 2x">
-            </amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li class="ampstart-nav-item gallery-sidebar-nav-item">
-          <a class="ampstart-nav-link" href="./stickers-inner.amp.html">
-            <div class="gallery-sidebar-nav-item-text">
-              Stickers & Posters<br />See more
-            </div>
-            <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/site/stick.png" srcset="./img/site/stick.png 1x, ./img/sitestick.png 2x">
-            </amp-img>
-            <div class="gallery-sidebar-nav-item-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
-                </polyline>
-              </svg></div>
-          </a>
-        </li>
-        <li>
-          <div class="flex items-center">
-            <a href="https://m075.github.io/portfolio">
-              <p>Designed by M075.dev &copy;</p>
-            </a>
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+      <li role="heading" class="ampstart-sidebar-nav-title">
+        <h4>Current Works</h4>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./index.amp.html">
+          <div class="gallery-sidebar-nav-item-text">Home</div>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+        <a class="ampstart-nav-link" href="./contact.amp.html">
+          <div class="gallery-sidebar-nav-item-text">Contact</div>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+        <a class="ampstart-nav-link" href="./about.amp.html">
+          <div class="gallery-sidebar-nav-item-text">About</div>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./frames-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Canvases & Boards<br />See more
           </div>
-        </li>
-      </ul>
-    </nav>
-  </amp-sidebar>
-  <!-- End Sidebar -->
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/08.png" srcset="./img/site/08.png, ./img/site/08.png"></amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./logos-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Logos & Letterheads<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="../img/site/logo8.jpg" srcset="./img/site/logo8.jpg, ./img/site/logo8.jpg">
+          </amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./brochures-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Brochures & Menus<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/022.png" srcset="./img/site/022.png ./img/site/022.png"></amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./ads-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Socials & Ads<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/soc2.png" srcset="./img/site/soc2.png, ./img/site/soc2.png"></amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./invites-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Biz Cards & Invites<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/biz2.jpg" srcset="./img/site/biz2.jpg 1x, ./img/site/biz2.jpg 2x">
+          </amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./banners-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Banners & Flyers<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/bann.jpg" srcset="./img/site/bann.jpg 1x, ./img/site/bann.jpg 2x">
+          </amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li class="ampstart-nav-item gallery-sidebar-nav-item">
+        <a class="ampstart-nav-link" href="./stickers-inner.amp.html">
+          <div class="gallery-sidebar-nav-item-text">
+            Stickers & Posters<br />See more
+          </div>
+          <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
+            src="./img/site/stick.png" srcset="./img/site/stick.png 1x, ./img/sitestick.png 2x">
+          </amp-img>
+          <div class="gallery-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95">
+              </polyline>
+            </svg></div>
+        </a>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <a href="https://m075.github.io/portfolio">
+            <p>Designed by M075.dev &copy;</p>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</amp-sidebar>
+<!-- End Sidebar -->
     <!-- End Navbar -->
 
     <div class="gallery-component-tagline">
@@ -2387,19 +2325,19 @@ limitations under the License.
           <div
             class="gallery-component-hero-content absolute left-0 right-0 z1"
           >
-            <h1 class="gallery-component-hero-heading">Canvases & Frames</h1>
-            <!-- <div class="gallery-component-hero-subheading">
-             A Wide Selection of Beautifully printed Arabic calligraphy 
-            </div> -->
+            <h1 class="gallery-component-hero-heading">About us</h1>
+            <div class="gallery-component-hero-subheading">
+              Check out our social pages in one place!
+            </div>
             <div class="gallery-component-hero-action">
               <script async src="https://sdk.arengu.com/forms.js"></script>
               <script async src="https://sdk.arengu.com/modal.js"></script>
-             <button
-                class="ampstart-btn gallery-component-button items-center justify-center"  on="tap:my-lightbox" role="button" tabindex="0"
-              data-arengu-modal-form-id="161177445227455959">
-                Order Now!
+              <button
+                class="ampstart-btn gallery-component-button items-center justify-center" data-arengu-modal-form-id="161184391699959279"  
+              >
+               Ask now!
               </button>
-             </div>
+            </div>
           </div>
         </div>
         <div class="gallery-component-hero-carousel">
@@ -2411,38 +2349,38 @@ limitations under the License.
             loop=""
           >
             <amp-img
-              src="../img/site/08.png"
-              srcset="../img/site/08.png, ../img/site/08.png"
+              src="../img/site/contact/con1.png"
+              srcset="../img/site/contact/con1.png, ../img/site/contact/con1.png"
               width="361"
               height="316"
             ></amp-img>
             <amp-img
-              src="../img/site/20.png"
-              srcset="../img/site/20.png, ../img/site/20.png"
+              src="../img/site/contact/con2.jpg"
+              srcset="../img/site/contact/con2.jpg, ../img/site/contact/con2.jpg"
               width="211"
               height="316"
             ></amp-img>
             <amp-img
-              src="../img/site/28.png"
-              srcset="../img/site/28.png, ../img/site/28.png"
+              src="../img/site/contact/con3.png"
+              srcset="../img/site/contact/con3.png, ../img/site/contact/con3.png"
               width="316"
               height="316"
             ></amp-img>
             <amp-img
-              src="../img/site/33.png"
-              srcset="../img/site/33.png, ../img/site/33.png"
+              src="../img/site/contact/con4.png"
+              srcset="../img/site/contact/con4.png, ../img/site/contact/con4.png"
               width="517"
               height="316"
             ></amp-img>
             <amp-img
-              src="../img/site/17.png"
-              srcset="../img/site/17.png, ../img/site/17.png"
+              src="../img/site/contact/con5.png"
+              srcset="../img/site/contact/con5.png, ../img/site/contact/con5.png"
               width="473"
               height="316"
             ></amp-img>
             <amp-img
-              src="../img/site/26.png"
-              srcset="../img/site/26.png, ../img/site/26.png"
+              src="../img/site/contact/con6.png"
+              srcset="../img/site/contact/con6.png, ../img/site/contact/con6.png"
               width="364"
               height="316"
             ></amp-img>
@@ -2453,27 +2391,29 @@ limitations under the License.
             <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div>
             <div class="md-col-8 lg-col-7">
               <blockquote>
-                Whatever you want printed on a canvas or frame, from Quranic verses to an arabic proverb, let us know what you have in mind. 
+                We are always available to see to your design requirements, especially for your stunning new business or home.&#128513;&#128076;
               </blockquote>
             </div>
           </div>
         </div>
       </header>
-      <amp-facebook-like width="100" height="30" layout="intrinsic" data-layout="button_count" data-size="large"
-        data-href="https://www.facebook.com/freshinkdesigns2020/">
-      </amp-facebook-like>
-      <section class="gallery-base-section gallery-base-rich-text">
+      <!-- <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto">
           <div class="flex flex-wrap">
             <div class="col-12 md-col-9">
               <p class="gallery-base-invert relative z1 mb2">
-                Here is just a paradigm of what our canvases portray, take note of variety of variations.
+                Vestibulum sit nibh. Et aliquam dolor. Sodales ac dui. Sed erat
+                lacinia maecenas fusce accumsan vehicula aliquam nibh lorem
+                dolor nulla. Facilisi quis tellus. Ut id sed. Porttitor habitant
+                viverra proident scelerisque duis duis et turpis. Integer est
+                condimentum. Suscipit nulla integer. Phasellus facilis
+                vestibulum. Con pellentesque sed. Urna in risus sem fusce
+                suscipit. In sed integer. Imperdiet mauris sit. Pretium vitae
+                in. Fusce et vehicula. Nibh a aliquam. Proin massa posuere. Quis
+                pulvinar vehicula.
               </p>
             </div>
           </div>
-          <br>
-
-         
           <div class="gallery-inner-3d-row gallery-inner-perspective">
             <div class="gallery-inner-3d-row-img-left">
               <div class="gallery-inner-perspective">
@@ -2481,10 +2421,10 @@ limitations under the License.
                   width="450"
                   height="350"
                   layout="responsive"
-                  src="../img/site/99.png"
+                  src="../img/gallery/stairs.jpg"
                   srcset="
-                    ../img/site/99.png,
-                    ../img/site/99.png
+                    ../img/gallery/stairs.jpg 1x,
+                    ../img/gallery/stairs@2x.jpg 2x
                   "
                   alt="pink stairs against a blue sky"
                 ></amp-img>
@@ -2496,10 +2436,10 @@ limitations under the License.
                   width="450"
                   height="390"
                   layout="responsive"
-                  src="../img/site/992.png"
+                  src="../img/gallery/plant.jpg"
                   srcset="
-                  ../img/site/992.png,
-                  ../img/site/992.png
+                    ../img/gallery/plant.jpg 1x,
+                    ../img/gallery/plant@2x.jpg 2x
                   "
                   alt="house plant on a chair on a yellow background"
                 ></amp-img>
@@ -2511,10 +2451,10 @@ limitations under the License.
                   width="500"
                   height="600"
                   layout="responsive"
-                  src="../img/site/993.png"
+                  src="../img/gallery/lamp.jpg"
                   srcset="
-                  ../img/site/993.png,
-                  ../img/site/993.png
+                  ../img/gallery/lamp.jpg 1x,
+                  ../img/gallery/lamp@2x.jpg 2x
                   "
                   alt="pink lamp on a blue wall"
                 ></amp-img>
@@ -2522,36 +2462,162 @@ limitations under the License.
             </div>
           </div>
         </div>
-      </section>
-      <section class="gallery-base-section gallery-base-rich-text">
+      </section> -->
+      <section class="gallery-base-section gallery-base-rich-text" id="section1">
         <div class="gallery-base-container mx-auto">
           <div class="flex flex-wrap">
             <div class="col-12 md-col-8">
               <h2 class="gallery-base-invert relative z1 mb2">
-                About our Designs
+                Insta Post
               </h2>
-              <p class="gallery-base-invert relative z1 mb2">
-                Suspendisse quisque suscipit mauris ac culpa. Duis etiam mauris.
-                Lacinia volutpat ut. Congue etiam lobortis. Ultrices aliquam
-                rutrum. Dignissim fermentum odio amet id tellus. At taciti
-                imperdiet. Consequat ut blandit. Amet justo posuere. Metus
-                ligula amet. Vehicula libero enim. Lectus sed elit ante dui quis
-                leo nobis.
-              </p>
+              <p class="gallery-base-invert relative z1 mb2">We thank you for choosing Fresh Ink Designs &copy;</p><br>
+        <blockquote class="instagram-media" data-instgrm-captioned
+            data-instgrm-permalink="https://www.instagram.com/p/CHqc598J6G5/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="13"
+            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <div style="padding:16px;"> <a
+                    href="https://www.instagram.com/p/CHqc598J6G5/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                        <div
+                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                            </div>
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                            viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                    <g>
+                                        <path
+                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                    <div style="padding-top: 8px;">
+                        <div
+                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                            View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div>
+                            <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                            </div>
+                            <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                            </div>
+                            <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                            </div>
+                        </div>
+                        <div style="margin-left: 8px;">
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                            </div>
+                            <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                            </div>
+                        </div>
+                        <div style="margin-left: auto;">
+                            <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                            </div>
+                            <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                            </div>
+                            <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                        <div
+                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                        </div>
+                    </div>
+                </a>
+                <p
+                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/CHqc598J6G5/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                        target="_blank">A post shared by Fresh Ink Designs (@fresh_ink_designs)</a></p>
+            </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+              <!-- <amp-iframe width="480" height="1000" sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf1kYcZ7LfuT628_BayR4YYS6W5hrCM3iUWxvhtby7Wy3MaFg/viewform?embedded=true">
+              </amp-iframe> -->
             </div>
             <div class="col-12 md-col-4">
               <amp-img
-                width="100px"
-                height="150px"
+                width="8"
+                height="12"
                 layout="responsive"
-                src="../img/site/framsab.png"
-              
-                alt=""
+                src="../img/gallery/skyline.jpg"
+                srcset="
+                  ../img/gallery/skyline.jpg 1x,
+                  ../img/gallery/skyline@2x.jpg 2x
+                "
+                alt="mountain at sunset"
               ></amp-img>
             </div>
           </div>
+        </amp-facebook-page>
+    </section>
+    <section>
+    <section class="gallery-base-section gallery-base-rich-text" id="section1">
+        <div class="gallery-base-container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="col-12 md-col-8">
+                    <h2 class="gallery-base-invert relative z1 mb2">
+                        Like us on Facebook
+                    </h2>
+                    <p class="gallery-base-invert relative z1 mb2">We thank you for choosing Fresh Ink Designs &copy;</p>
+                    <br>
+                   
+    <amp-facebook-page width="340" height="130" layout="responsive" data-href="https://www.facebook.com/freshinkdesigns2020/">
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="gallery-base-section gallery-base-rich-text" id="section1">
+        <div class="gallery-base-container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="col-12 md-col-8">
+                    <h2 class="gallery-base-invert relative z1 mb2">
+                        WhatsApp or Telegram?
+                    </h2>
+                <div class="col-12 md-col-8">
+                    
+                    <img src="https://img.icons8.com/clouds/100/000000/whatsapp.png" />
+                    <p class="gallery-base-invert relative z1 mb2"><a href="https://wa.me/+27826870077">Line 1</a> <a href="https://wa.me/+27815033713">Line 2</a></p>
+                </div>
+                <div class="col-12 md-col-8">
+
+                        <a href="https://t.me/freshinkdesigns"><p class="gallery-base-invert relative z1 mb2">Join our group</p></a>
+                    </div></div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+
       <!-- <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto">
           <div class="flex flex-wrap">
@@ -2567,14 +2633,9 @@ limitations under the License.
                 pellentesque. Consequat sapien consectetuer. Nam lacinia erat
                 mollis sodales in magna nec sapien ultrices scelerisque quam.
               </p>
-              <p class="gallery-base-invert relative z1 mb2">
-                Ultrices nunc dolor voluptates euismod morbi amet in mi libero
-                elit malesuada. Fringilla potenti magna. Orci ipsum est ac nunc
-                eget maecenas ligula dui. Eu a suspendisse. Neque at volutpat.
-                Nam ut ligula. Cras turpis urna consequuntur varius tempus
-                aenean maecenas purus sem faucibus facilisis penatibus volutpat
-                proin. Wisi libero in. Venenatis tellus elementum.
-              </p>
+                <amp-iframe width="480" height="1000" sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSf1kYcZ7LfuT628_BayR4YYS6W5hrCM3iUWxvhtby7Wy3MaFg/viewform?embedded=true">
+                </amp-iframe>
             </div>
             <div class="col-12 md-col-5">
               <amp-img
@@ -2582,10 +2643,10 @@ limitations under the License.
                 height="579"
                 class="gallery-inner-offset-img"
                 layout="responsive"
-                src="../img/site/lake.jpg"
+                src="../img/gallery/lake.jpg"
                 srcset="
-                  ../img/site/pineapple.jpg 1x,
-                  ../img/site/pineapple@2x.jpg 2x
+                  ../img/gallery/pineapple.jpg 1x,
+                  ../img/gallery/pineapple@2x.jpg 2x
                 "
                 alt="blue lake against skyline"
               ></amp-img>
@@ -2594,49 +2655,73 @@ limitations under the License.
         </div>
       </section> -->
 
-  <section class="gallery-base-section gallery-base-rich-text">
-    <div class="gallery-base-container mx-auto">
-      <h2 class="gallery-base-invert relative z1 pb2 mb2">Featured Services</h2>
-      <ul class="gallery-related-section-items list-reset flex flex-wrap m0">
-        <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-          <figure class="ampstart-image-with-caption m0 relative mb4"><a href="logos-inner.amp.html">
-            <amp-img width="233" height="202" src="../img/site/contact/46.png" srcset="
-                        ../img/site/contact/46.png 1x,
-                        ../img/gallery/jellyfish@2x.jpg 2x
-                      " alt="swimming jellyfish" layout="responsive" class="gallery-recommended-image"></amp-img>
-            <figcaption class="h5 mt1 px3">
-             Logos &mdash; Fresh Ink Designs</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-          <figure class="ampstart-image-with-caption m0 relative mb4"><a href="frames-inner.amp.html">
-            <amp-img width="233" height="202" src="../img/site/contact/992.png" srcset="
-                        ../img/site/contact/992.png,
-                        ../img/site/contact/992.png
-                      " alt="colourful hot air balloon" layout="responsive" class="gallery-recommended-image"></amp-img>
-            <figcaption class="h5 mt1 px3">
-              Canvas &mdash; 99 Names of Allah</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-          <figure class="ampstart-image-with-caption m0 relative mb4">
-            <a href="ads-inner.amp.html">
-              <amp-img width="233" height="202" src="../img/site/contact/42.jpg" srcset="
-                        ../img/site/contact/42.jpg,
-                        ../img/site/contact/42.jpg
-                      " alt="sliced orange covered in blue paint" layout="responsive" class="gallery-recommended-image">
-              </amp-img>
-              <figcaption class="h5 mt1 px3">
-                Insta Ads &mdash; Baker's Bliss
-            </a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <section class="gallery-base-section gallery-base-rich-text">
+        <div class="gallery-base-container mx-auto">
+          <h2 class="gallery-base-invert relative z1 pb2 mb2">Featured</h2>
+          <ul
+            class="gallery-related-section-items list-reset flex flex-wrap m0"
+          >
+            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
+              <figure class="ampstart-image-with-caption m0 relative mb4">
+                <amp-img
+                  width="233"
+                  height="202"
+                  src="../img/site/contact/46.png"
+                  srcset="
+                      ../img/site/contact/46.png 1x,
+                      ../img/gallery/jellyfish@2x.jpg 2x
+                    "
+                  alt="swimming jellyfish"
+                  layout="responsive"
+                  class="gallery-recommended-image"
+                ></amp-img>
+                <figcaption class="h5 mt1 px3">
+                  Logos &mdash; Fresh Ink Designs
+                </figcaption>
+              </figure>
+            </li>
+            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
+              <figure class="ampstart-image-with-caption m0 relative mb4">
+                <amp-img
+                  width="233"
+                  height="202"
+                  src="../img/site/contact/992.png"
+                  srcset="
+                      ../img/site/contact/992.png,
+                      ../img/site/contact/992.png
+                    "
+                  alt="colourful hot air balloon"
+                  layout="responsive"
+                  class="gallery-recommended-image"
+                ></amp-img>
+                <figcaption class="h5 mt1 px3">
+                  Canvas &mdash; 99 Names of Allah
+                </figcaption>
+              </figure>
+            </li>
+            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
+              <figure class="ampstart-image-with-caption m0 relative mb4">
+                <amp-img
+                  width="233"
+                  height="202"
+                  src="../img/site/contact/42.jpg"
+                  srcset="
+                      ../img/site/contact/42.jpg,
+                      ../img/site/contact/42.jpg
+                    "
+                  alt="sliced orange covered in blue paint"
+                  layout="responsive"
+                  class="gallery-recommended-image"
+                ></amp-img>
+                <figcaption class="h5 mt1 px3">
+                  Insta Ads &mdash; ...
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     <section class="gallery-component-map gallery-base-section gallery-base-rich-text">
       <div class="gallery-component-map-details left-0 right-0 z1">
         <div class="gallery-base-container mx-auto">
