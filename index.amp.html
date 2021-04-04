@@ -4080,41 +4080,55 @@
           </amp-sidebar>
           <!-- End Sidebar -->
           <!-- End Navbar -->
-          <div class="px1 md-px2 py1 md-py2 flex justify-between items-center">
+          <!-- <div class="px1 md-px2 py1 md-py2 flex justify-between items-center"> -->
             <a href="travel.amp.html" class="travel-icon-logo mx-auto inline-block circle">
-              
-              
               <div class="gallery-component-tagline">
-                <div>Fresh Ink Designs 2021 &copy;</div>
+                <div class="xs-hide sm-hide">Fresh Ink Designs 2021 &copy;</div>
+                <div class="md-hide lg-hide" style="color: #fff">Fresh Ink Designs &copy;</div>
               </div> </a>
           </div>
         </header>
       </section>
 
 
-      <!-- Hero -->
-      <div class="travel-hero-bg absolute col-12">
-        <amp-img class="travel-hero-bg-img absolute" src="../img/site/home8.png" height="80vmax" noloading="">
+      <!-- Hero DESK-->
+        <div class="travel-hero-bg absolute col-12 sm-hide xs-hide v-xs-hide">
+        <amp-img class="travel-hero-bg-img absolute sm-hide xs-hide v-xs-hide" src="../img/site/home8.png" height="80vmax" noloading="">
         </amp-img>
-        <amp-img class="travel-hero-bg-img absolute" src="../img/site/22.png" height="80vmax" noloading="">
+        <amp-img class="travel-hero-bg-img absolute sm-hide xs-hide v-xs-hide" src="../img/site/22.png" height="80vmax" noloading="">
         </amp-img>
-        <amp-img class="travel-hero-bg-img absolute" src="../img/site/home1.png" height="80vmax" noloading="">
+        <amp-img class="travel-hero-bg-img absolute sm-hide xs-hide v-xs-hide" src="../img/site/home1.png" height="80vmax" noloading="">
         </amp-img>
-        <amp-img class="travel-hero-bg-img absolute" src="../img/site/home7.png" height="80vmax" noloading="">
+        <amp-img class="travel-hero-bg-img absolute sm-hide xs-hide v-xs-hide" src="../img/site/home7.png" height="80vmax" noloading="">
         </amp-img>
-      </div>
+        </div>
+
+        <div class="travel-hero-bg absolute col-12 md-hide lg-hide overflow-hidden" style="top: 0px">
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home8.png" height="80vmax"
+            noloading="">
+          </amp-img>
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/22.png" height="80vmax"
+            noloading="">
+          </amp-img>
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home1.png" height="80vmax"
+            noloading="">
+          </amp-img>
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home7.png" height="80vmax"
+            noloading="">
+          </amp-img>
+        </div>
+      
 
       <section class="travel-hero relative">
         <div class="travel-hero-content max-width-3 mx-auto absolute top-0 left-0 right-0 flex self-end items-center">
           <div class="travel-hero-content-inner relative px1 md-px2 flex-auto self-end">
-            <header>
-              <h1 class="travel-hero-heading mb2 line-height-1">Designing<br class="md-hide lg-hide"> made&nbsp;easy
+            <header style="margin-bottom: 37px">
+              <h1 class="travel-hero-heading mb2 line-height-1">Designing<br class="md-hide lg-hide"> made&nbsp;easy 
               </h1>
               <h2 class="travel-hero-subheading line-height-2 bold xs-hide sm-hide">Describe your ideas and we will respond swiftly.</h2>
-            </header>
             <!-- Search Form -->
             <div class="travel-hero-search">
-              <label class="travel-input-icon travel-shadow flex col-12 relative rounded">
+              <label class="travel-input-icon travel-shadow flex col-12 relative rounded sm-hide xs-hide">
                 <input class="travel-input travel-input-big travel-input-clear border block col-12 rounded"
                   list="locations" type="text" name="query" placeholder="How can we assist in beautifying your life?" on="
               change:AMP.setState({
@@ -4134,19 +4148,10 @@
                   
                 </svg> </label>
                 
-                <amp-list layout="flex-item" src="/api/places?types=(regions)&types=(cities)&input="
-                [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live">
-                <template type="amp-mustache">
-                  <datalist id="locations">
-                    {{#predictions}}
-                    <option value="{{description}}">
-                      {{/predictions}}
-                    </option></datalist>
-                  </template>
-                </amp-list><br>
+               <br>
                 <h3 class="travel-hero-subheading line-height-2 bold xs-hide sm-hide" style="color: #000">Would you like to set a meet?</h3>
 
-              <div class="travel-hero-search-dates flex my2 justify-around">
+              <div class="travel-hero-search-dates flex my2 justify-around xs-hide sm-hide">
                 <label class="travel-date-input relative bold flex-auto"
                   [class]="'travel-date-input relative bold flex-auto' + (fields_departure ? ' travel-date-input-touched' : '')">
                   <input class="block relative p0 z1" type="date" placeholder="yyyy-mm-dd"
