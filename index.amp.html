@@ -3039,6 +3039,21 @@
         background-image: linear-gradient(180deg, transparent, #323a43 300px)
       }
 
+      .travel-hero-sm {
+        height: 100vmax;
+        animation: b .8s ease-out both
+      }
+
+      .travel-hero-sm:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 95vmax;
+        top: calc(100vmax - 300px);
+        background-image: linear-gradient(180deg, transparent, #323a43 300px)
+      }
+
       .travel-hero-bg-img {
         top: -5vmax;
         right: -5vmax;
@@ -4103,17 +4118,17 @@
         </amp-img>
         </div>
 
-        <div class="travel-hero-bg absolute col-12 md-hide lg-hide overflow-hidden" style="top: 0px">
-          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home8.png" height="80vmax"
+        <div class="travel-hero-sm absolute col-12 md-hide lg-hide overflow-hidden" style="top: 0px">
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home8.png" height="100vmax"
             noloading="">
           </amp-img>
-          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/22.png" height="80vmax"
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/22.png" height="100vmax"
             noloading="">
           </amp-img>
-          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home1.png" height="80vmax"
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home1.png" height="100vmax"
             noloading="">
           </amp-img>
-          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home7.png" height="80vmax"
+          <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home7.png" height="100vmax"
             noloading="">
           </amp-img>
         </div>
@@ -4230,7 +4245,8 @@
         <!-- Angles -->
         <div class="travel-angles max-width-3 mx-auto">
           <div class="travel-angle-left"  >
-            <div class="travel-angle-1 absolute" style="overflow: hidden"></div>
+            <div class="travel-angle-1 absolute lg-hide md-hide" style="overflow: hidden"></div>
+            <div class="travel-angle-1 absolute xs-hide sm-hide"></div>
           </div>
           <div class="travel-angle-left xs-hide sm-hide">
             <div class="travel-angle-2 absolute"></div>
