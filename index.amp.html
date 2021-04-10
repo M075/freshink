@@ -3494,7 +3494,7 @@
       .gallery-sidebar .ampstart-navbar-trigger {
         height: 2.35rem;
         line-height: calc(2.35rem * 1.066666667);
-        overflow: hidden;
+        overflow: auto;
         padding: 0 0.625rem;
         margin-top: calc(2.35rem / -2 + 1.25rem / 2);
       }
@@ -3820,116 +3820,8 @@
   <body>
 
 
-    <amp-state id="ui_hero">
-      <script type="application/json">true</script>
-    </amp-state>
-    <amp-state id="ui_reset">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="ui_filterPane">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="ui_sortPane">
-      <script type="application/json">false</script>
-    </amp-state>
-
-    <amp-state id="fields_query">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_query_initial">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_query_live">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_query_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_query">
-      <script type="application/json">""</script>
-    </amp-state>
-
-    <amp-state id="fields_departure">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_departure_initial">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_departure_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_departure">
-      <script type="application/json">""</script>
-    </amp-state>
-
-    <amp-state id="fields_return">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_return_initial">
-      <script type="application/json">""</script>
-    </amp-state>
-    <amp-state id="fields_return_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_return">
-      <script type="application/json">""</script>
-    </amp-state>
-
-    <amp-state id="fields_type">
-      <script type="application/json">[]</script>
-    </amp-state>
-    <amp-state id="fields_type_initial">
-      <script type="application/json">[]</script>
-    </amp-state>
-    <amp-state id="fields_type_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_type">
-      <script type="application/json">[]</script>
-    </amp-state>
-
-    <amp-state id="fields_city">
-      <script type="application/json">[]</script>
-    </amp-state>
-    <amp-state id="fields_city_initial">
-      <script type="application/json">[]</script>
-    </amp-state>
-    <amp-state id="fields_city_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_city">
-      <script type="application/json">[]</script>
-    </amp-state>
-
-    <amp-state id="fields_sort">
-      <script type="application/json">"popularity-desc"</script>
-    </amp-state>
-    <amp-state id="fields_sort_initial">
-      <script type="application/json">"popularity-desc"</script>
-    </amp-state>
-    <amp-state id="fields_sort_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_sort">
-      <script type="application/json">"popularity-desc"</script>
-    </amp-state>
-
-    <amp-state id="fields_maxPrice">
-      <script type="application/json">801</script>
-    </amp-state>
-    <amp-state id="fields_maxPrice_initial">
-      <script type="application/json">801</script>
-    </amp-state>
-    <amp-state id="fields_maxPrice_live">
-      <script type="application/json">801</script>
-    </amp-state>
-    <amp-state id="fields_maxPrice_edited">
-      <script type="application/json">false</script>
-    </amp-state>
-    <amp-state id="query_maxPrice">
-      <script type="application/json">801</script>
-    </amp-state>
-    <section class="travel-main-wrapper overflow-hidden" role="main">
+    
+      <section class="travel-main-wrapper overflow-hidden" role="main">
 
       <!-- <section class="relative z2"> -->
       <!-- Start Navbar -->
@@ -4097,7 +3989,7 @@
       </amp-sidebar>
       <!-- End Sidebar -->
       <!-- End Navbar -->
-      <!-- <div class="px1 md-px2 py1 md-py2 flex justify-between items-center"> -->
+      <div class="px1 md-px2 py1 md-py2 flex justify-between items-center">
       <a href="travel.amp.html" class="travel-icon-logo mx-auto inline-block circle">
         <div class="gallery-component-tagline">
           <div class="xs-hide sm-hide">Fresh Ink Designs 2021 &copy;</div>
@@ -4105,9 +3997,7 @@
         </div>
       </a>
       </div>
-      </header>
     </section>
-
 
     <!-- Hero DESK-->
     <div class="travel-hero-bg absolute col-12 sm-hide xs-hide v-xs-hide">
@@ -4127,16 +4017,16 @@
 
     <div class="travel-hero-sm absolute col-12 md-hide lg-hide overflow-hidden" style="top: 0px">
       <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home8.png"
-        height="100vmax" noloading="">
+        height="80vmax" noloading="">
       </amp-img>
       <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/22.png"
-        height="100vmax" noloading="">
+        height="80vmax" noloading="">
       </amp-img>
       <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home1.png"
-        height="100vmax" noloading="">
+        height="80vmax" noloading="">
       </amp-img>
       <amp-img class="travel-hero-bg-img absolute md-hide lg-hide overflow-hidden" src="../img/site/home7.png"
-        height="100vmax" noloading="">
+        height="80vmax" noloading="">
       </amp-img>
     </div>
 
@@ -4152,18 +4042,10 @@
             <!-- Search Form -->
             <div class="travel-hero-search">
               <label class="travel-input-icon travel-shadow flex col-12 relative rounded sm-hide xs-hide">
-                <input class="travel-input travel-input-big travel-input-clear border block col-12 rounded"
-                  list="locations" type="text" name="query" placeholder="How can we assist in beautifying your life?"
-                  on="
-              change:AMP.setState({
-                fields_query: event.value,
-                fields_query_live: event.value,
-                fields_query_edited: query_query != event.value
-              });
-              input-debounced:AMP.setState({
-                fields_query_live: event.value
-              });
-            " value="" [value]="fields_query">
+               <input class="travel-input travel-input-big travel-input-clear border block col-12 rounded"
+                    list="locations" type="text" name="query" placeholder="How can we assist in beautifying your life?">
+             
+              
                 <svg class="travel-icon" viewBox="0 0 24 24" width="18px" height="18px">
 
                   <path
@@ -4240,7 +4122,6 @@
               <script async src="https://sdk.arengu.com/modal.js"></script>
               <button class="ampstart-btn travel-input-big rounded center bold white block col-12"
                 data-arengu-modal-form-id="161200971570955844">Set the meeting</button>
-
               <!--/ Search Form -->
               <a class="travel-hero-discover block center mx-auto mt1 md-hide lg-hide"
                 on="tap:travel-landing-content.scrollTo">
@@ -4838,12 +4719,12 @@
           </header>
           <div class="flex md-mx2 my3 py2 items-center travel-discover-panel travel-shadow-hover">
             <amp-img class="rounded relative flex-none mx1" width="100" height="100"
-              src="../../img/travel/blogpost-thumbnail.jpg"></amp-img>
+              src="../../img/site/16.png"></amp-img>
             <div class="flex-auto">
               <div class="h3 bold line-height-2 mb1">From the blog</div>
               <p class="travel-discover-panel-subheading my1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit amet dolor set. <a class="travel-link"
-                  href="#">Read more</a>
+                We are prepared to take care of any your design needs<a class="travel-link"
+                  href="about.amp.html">Find out more</a>
               </p>
             </div>
           </div>
@@ -4863,7 +4744,7 @@
             <!-- Right column -->
             <div class="travel-newsletter-signup">
               <header class="max-width-3 mx-auto px1 md-px2">
-                <h4 class="travel-footer-right-column-heading travel-spacing-none h2 mb3 blue">Want travel
+                <h4 class="travel-footer-right-column-heading travel-spacing-none h2 mb3 blue">Want our
                   deals<br>straight to your inbox?</h4>
                 <div class="h4 bold mb1">Sign up to our newsletter</div>
               </header>
@@ -4874,7 +4755,8 @@
                     <input class="travel-input travel-input-big block col-12 flex-auto rounded-left" type="text"
                       name="email" placeholder="Enter your email">
                     <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
-                    <button type="button" class="travel-link travel-input-big nowrap rounded-right">
+                    <button type="button" class="travel-link travel-input-big nowrap rounded-right" type="submit" method="post" 
+                    action-xhr="">
                       Sign up now
                     </button>
                   </div>
