@@ -4676,16 +4676,14 @@
 
             <div class="flex justify-center pb2">
               <div class="travel-input-group flex items-center col-8">
-              
-                <form method="post" name="myemailform" action="form-to-email.php">
-
                 <input class="travel-input travel-input-big line-height-2 block col-12 flex-auto rounded-left"
-                  type="text" name="message" placeholder="Describe your requirements?">
+                  type="text" name="query" placeholder="Describe your requirements?"
+                  on="change:AMP.setState({fields_query: event.value})" value="" [value]="fields_query">
                 <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
-                <input
-                  class="travel-link travel-input travel-input-big line-height-2 link rounded-right nowrap text-decoration-none"
-                  type="submit" name="submit" value="submit">
-                </input>
+                <a href="travel-results.amp.html"
+                  class="travel-link travel-input travel-input-big line-height-2 link rounded-right nowrap text-decoration-none">
+                  Send Request
+                </a>
               </div>
             </div>
           </div>
@@ -4734,13 +4732,17 @@
                 <div class="travel-footer-input-bg bg-black absolute right-0 left-0 md-hide lg-hide"></div>
                 <div class="max-width-3 mx-auto px1 md-px2 relative">
                   <div class="travel-input-group flex items-center col-12 rounded travel-shadow">
-                    <input class="travel-input travel-input-big block col-12 flex-auto rounded-left" type="text"
-                      name="email" placeholder="Enter your email">
-                    <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
-                    <button type="button" class="travel-link travel-input-big nowrap rounded-right" type="submit" method="post" 
-                    action-xhr="">
-                      Sign up now
-                    </button>
+
+                    <form action="https://formspree.io/f/xqkwkjgo" method="POST">
+                      <input class="travel-input travel-input-big block col-12 flex-auto rounded-left" type="email" name="_replyto"
+                        placeholder="Enter your email">
+                      <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
+                      <button type="button" class="travel-link travel-input-big nowrap rounded-right" type="submit">
+                        Sign up now
+                      </button>
+                    
+                    </form>
+                    
                   </div>
                 </div>
               </div>
