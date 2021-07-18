@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>Home - Fresh Ink Designs</title>
-    <link rel="canonical" href="https://www.ampstart.com/templates/travel/travel.amp.html">
+    <link rel="canonical" href="https://www.freshinkdesigns.co.za">
     <meta name="viewport" content="width=device-width">
     <meta name="amp-google-client-id-api" content="googleanalytics">
     <script async custom-element="amp-facebook-page"
       src="https://cdn.ampproject.org/v0/amp-facebook-page-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 
 
 
@@ -4041,7 +4042,42 @@
               respond swiftly.</h2>
             <!-- Search Form -->
             <div class="travel-hero-search">
-              <label class="travel-input-icon travel-shadow flex col-12 relative rounded sm-hide xs-hide">
+              
+                <div class="max-width-3 mx-auto px1 md-px2 relative">
+          <div class="travel-input-group flex items-center col-12 rounded travel-shadow">
+          <script async src="https://sdk.arengu.com/forms.js"></script>
+          <form id="subscription-form" method="POST"
+           action-xhr="https://api.arengu.com/forms/161821649283027847/submissions/"
+           target="_top"
+           >
+                 <label class="travel-input-icon travel-shadow flex col-12 relative rounded sm-hide xs-hide">
+
+            <input class="travel-input travel-input-big block col-12 flex-auto rounded-left" type="email" name="email"
+              placeholder="Enter your email">
+            <svg class="travel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M21,11c0,6.708-4.282,6.437-4.826,6.437c-0.616,0-1.147-0.133-1.595-0.397c-0.448-0.265-0.786-0.645-1.016-1.139 c-0.358,0.501-0.775,0.877-1.252,1.128c-0.476,0.251-0.993,0.376-1.552,0.376c-0.522,0-0.99-0.114-1.401-0.344 c-0.412-0.229-0.754-0.553-1.026-0.973c-0.272-0.418-0.466-0.924-0.58-1.514c-0.114-0.592-0.136-1.252-0.064-1.982 c0.101-0.917,0.299-1.746,0.597-2.487C8.581,9.364,8.95,8.732,9.39,8.209C9.831,7.687,10.332,7.284,10.893,7 c0.563-0.283,1.159-0.424,1.789-0.424c2.026,0,3.083,1.021,3.298,1.171l-0.548,6.209c-0.043,0.358-0.203,1.751,1.128,1.751 C16.911,15.707,19,15.25,19,11c0-0.133,0.917-7-6.575-7C6.271,4,5,9.896,5,12c0,8.388,5.312,8,7,8c2.021,0,3.053-0.426,3.282-0.533 l0.447,1.825C15.478,21.457,14.479,22,12,22c-3.063,0-9-0.146-9-10c0-1.362,0.75-10,9.468-10C20.812,2,21,9.563,21,11z M10.072,12.592c-0.079,0.945,0.004,1.663,0.247,2.154c0.243,0.49,0.638,0.735,1.182,0.735c1.103,0,1.654-1.436,1.783-1.794 l0.451-5.081c-0.129-0.043-0.702-0.14-0.859-0.14c-0.823,0-1.463,0.351-1.918,1.053C10.504,10.222,10.208,11.246,10.072,12.592z" />
+            </svg> 
+            <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
+            <button id="subscription" type="submit" class="travel-link travel-input-big nowrap rounded-right">Subscribe</button>
+             </label>
+            
+            <div submit-success>
+              <template type="amp-mustache">
+                Subscription successful!
+              </template>
+            </div>
+            <div submit-error>
+              <template type="amp-mustache">
+                Subscription failed!
+              </template>
+            </div>
+          </form>
+         
+           
+          </div>
+        </div>
+<!-- <label class="travel-input-icon travel-shadow flex col-12 relative rounded sm-hide xs-hide">
                 <input class="travel-input travel-input-big travel-input-clear border block col-12 rounded"
                   list="locations" type="text" name="query" placeholder="How can we assist in beautifying your life?">
 
@@ -4052,13 +4088,12 @@
                     d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
 
 
-                </svg> </label>
-
-              <br>
+                </svg> </label> -->
+              <br><br>
               <h3 class="travel-hero-subheading line-height-2 bold xs-hide sm-hide" style="color: #000">Would you like
-                to set a meet?</h3>
+                to set a meet?</h3><br>
 
-              <div class="travel-hero-search-dates flex my2 justify-around xs-hide sm-hide">
+              <!-- <div class="travel-hero-search-dates flex my2 justify-around xs-hide sm-hide">
                 <label class="travel-date-input relative bold flex-auto"
                   [class]="'travel-date-input relative bold flex-auto' + (fields_departure ? ' travel-date-input-touched' : '')">
                   <input class="block relative p0 z1" type="date" placeholder="yyyy-mm-dd"
@@ -4116,7 +4151,7 @@
                     Time
                   </div>
                 </label>
-              </div>
+              </div> -->
 
               <script async src="https://sdk.arengu.com/forms.js"></script>
               <script async src="https://sdk.arengu.com/modal.js"></script>
