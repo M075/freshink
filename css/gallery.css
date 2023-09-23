@@ -1622,7 +1622,7 @@ body {
   transition: transform .5s
 }
 
-.gallery-inner-3d-row-img-center amp-img,.gallery-inner-3d-row-img-left amp-img,.gallery-inner-3d-row-img-right amp-img {
+.gallery-inner-3d-row-img-center img,.gallery-inner-3d-row-img-left img,.gallery-inner-3d-row-img-right img {
   transition: box-shadow .5s;
   box-shadow: 0 30px 60px rgba(6,7,22,.15)
 }
@@ -1677,7 +1677,7 @@ body {
   transform: translateZ(200px)
 }
 
-.gallery-inner-3d-row-img-center:hover amp-img,.gallery-inner-3d-row-img-left:hover amp-img,.gallery-inner-3d-row-img-right:hover amp-img {
+.gallery-inner-3d-row-img-center:hover img,.gallery-inner-3d-row-img-left:hover img,.gallery-inner-3d-row-img-right:hover img {
   transition: box-shadow .25s;
   box-shadow: 0 30px 80px rgba(6,7,22,.15)
 }
@@ -2012,7 +2012,7 @@ figure {
   animation-name: b
 }
 
-.gallery-landing-image-wrapped amp-img {
+.gallery-landing-image-wrapped img {
   -o-object-fit: cover;
   object-fit: cover;
   box-shadow: 1vh 6vh 5vh rgba(6,7,22,.15);
@@ -2020,79 +2020,79 @@ figure {
   pointer-events: none
 }
 
-.gallery-landing-image-wrap:first-child amp-img {
+.gallery-landing-image-wrap:first-child img {
   background: #d97b7f
 }
 
-.gallery-landing-image-wrap:nth-child(2) amp-img {
+.gallery-landing-image-wrap:nth-child(2) img {
   background: #127eb1
 }
 
-.gallery-landing-image-wrap:nth-child(3) amp-img {
+.gallery-landing-image-wrap:nth-child(3) img {
   background: #e4bf0b
 }
 
-.gallery-landing-image-wrap:nth-child(4) amp-img {
+.gallery-landing-image-wrap:nth-child(4) img {
   background: #9f3f7a
 }
 
-.gallery-landing-image-wrap:nth-child(5) amp-img {
+.gallery-landing-image-wrap:nth-child(5) img {
   background: #5870ed
 }
 
-.gallery-landing-image-wrap:nth-child(6) amp-img {
+.gallery-landing-image-wrap:nth-child(6) img {
   background: #fe95a6
 }
 
-.gallery-landing-image-wrap:nth-child(7) amp-img {
+.gallery-landing-image-wrap:nth-child(7) img {
   background: #a8a697
 }
 
-.gallery-landing-image-wrap:nth-child(8) amp-img {
+.gallery-landing-image-wrap:nth-child(8) img {
   background: #c8acbc
 }
 
-.gallery-landing-image-wrap:nth-child(9) amp-img {
+.gallery-landing-image-wrap:nth-child(9) img {
   background: #ee9d57
 }
 
-.gallery-landing-image-wrap:nth-child(10) amp-img {
+.gallery-landing-image-wrap:nth-child(10) img {
   background: #ddd1d2
 }
 
-.gallery-landing-image-wrap:nth-child(11) amp-img {
+.gallery-landing-image-wrap:nth-child(11) img {
   background: #8dbbc0
 }
 
-.gallery-landing-image-wrap:nth-child(12) amp-img {
+.gallery-landing-image-wrap:nth-child(12) img {
   background: #9bd1ee
 }
 
-.gallery-landing-image-wrap:nth-child(13) amp-img {
+.gallery-landing-image-wrap:nth-child(13) img {
   background: #b48b86
 }
 
-.gallery-landing-image-wrap:nth-child(14) amp-img {
+.gallery-landing-image-wrap:nth-child(14) img {
   background: #764b4e
 }
 
-.gallery-landing-image-wrap:nth-child(15) amp-img {
+.gallery-landing-image-wrap:nth-child(15) img {
   background: #aaaab3
 }
 
-.gallery-landing-image-wrap:nth-child(16) amp-img {
+.gallery-landing-image-wrap:nth-child(16) img {
   background: #aeb197
 }
 
-.gallery-landing-image-wrap:nth-child(17) amp-img {
+.gallery-landing-image-wrap:nth-child(17) img {
   background: #370afa
 }
 
-.gallery-landing-image-wrap:last-child amp-img {
+.gallery-landing-image-wrap:last-child img {
   background: #c1c1bf
 }
 
-.gallery-landing-image-wrapped:hover amp-img {
+.gallery-landing-image-wrapped:hover img {
   transform: translateY(-1vh) scale(1.05);
   transition: transform .2s ease-in-out
 }

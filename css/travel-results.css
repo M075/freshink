@@ -1980,11 +1980,11 @@ body {
   object-fit: cover
 }
 
-amp-img.rounded img {
+img.rounded img {
   border-radius: 4px
 }
 
-amp-img.circle img {
+img.circle img {
   border-radius: 50%
 }
 
@@ -2536,7 +2536,7 @@ amp-img.circle img {
   outline: none
 }
 
-.travel-city-selector [option] amp-img {
+.travel-city-selector [option] img {
   width: 38px;
   height: 38px;
   margin-right: 10px;
@@ -2545,7 +2545,7 @@ amp-img.circle img {
   transition: transform .3s ease-in-out
 }
 
-.travel-city-selector [option] amp-img img {
+.travel-city-selector [option] img img {
   opacity: .5;
   transition: opacity .15s step-start .15s,transform .15s step-start .15s
 }
@@ -2595,11 +2595,11 @@ amp-img.circle img {
   display: block
 }
 
-.travel-city-selector [option][selected] amp-img {
+.travel-city-selector [option][selected] img {
   transform: rotateY(180deg)
 }
 
-.travel-city-selector [option][selected] amp-img img {
+.travel-city-selector [option][selected] img img {
   opacity: 1;
   transform: scaleX(-1)
 }
@@ -2974,7 +2974,7 @@ amp-img.circle img {
   border-radius: 4px
 }
 
-.travel-results-result-link amp-img {
+.travel-results-result-link img {
   background-color: #e3e5e8
 }
 
